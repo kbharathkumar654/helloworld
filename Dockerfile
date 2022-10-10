@@ -1,5 +1,3 @@
-FROM tomcat:8.0-alpine
-MAINTAINER "Bharath" 
-ADD *.war /usr/local/tomcat/webapps
-EXPOSE 8080
-CMD ["catalina.sh","run"]
+FROM tomcat:latest
+MAINTAINER mohan 
+COPY *.war /usr/local/tomcat/webapps
